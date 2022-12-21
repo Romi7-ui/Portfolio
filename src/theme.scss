@@ -1,0 +1,450 @@
+
+
+
+.theme-options {
+    max-width: 70px;
+    margin: auto;
+    text-align: left;
+    padding: 10px;
+    border-radius: 50px 0 0 20px;
+    background-color: #F9004D;
+    padding: 1rem;
+
+    position: fixed;
+    right: 0;
+    top: 50%;
+    transform: translate(100%, 20%);
+
+    transition: all .5s ease-in-out;
+
+    div {
+        cursor: pointer;
+        width: 20px;
+        height: 20px;
+
+
+        border-radius: 0% 50% 0;
+        margin: 1px 5px;
+        margin-top: 1rem;
+
+        display: grid;
+        transition: all 0.5s cubic-bezier(0.8, 0.84, 0.44, 1);
+        opacity: 0.7;
+
+        &.active {
+            opacity: 5;
+        }
+    }
+
+    font-size: 1rem;
+    color: #fff;
+
+    div:hover {
+        transform: rotate(360deg);
+    }
+
+
+
+    
+    #theme-black {
+        background-color: rgb(12, 11, 11);
+    }
+
+    #theme-blue {
+        background-color: #00ffee;
+    }
+
+    #theme-orange {
+        background-color: #d6ed17ff;
+    }
+
+    #theme-purple {
+        background-color: #39FF14;
+    }
+
+    #theme-white {
+        background-color:  rgb(255, 255, 255);
+    }
+
+}
+
+.App.theme-black {
+
+    background-color: rgb(15, 15, 15);
+
+    h1 {
+        color: white;
+    }
+
+}  
+
+.App.theme-white {
+    background-color: rgb(255, 255, 255);
+
+    h1 {
+        color: #000000;
+    }
+
+    .nav__items {
+        color: black;
+    }
+
+    .home__text {
+        color: #F9004D;
+    }
+
+    .welcome {
+        color: black;
+    }
+
+    .about__text {
+        color: black;
+    }
+
+    .header.active {
+        background-color: rgb(241, 216, 178);
+    }
+
+    .service__text {
+        color: whitesmoke;
+    }
+    .service__boxx{
+        background-color: rgb(10, 10, 10);
+    }
+
+    .heading {
+        color: black;
+    }
+
+    .hire__text {
+        color: black;
+    }
+
+    input.contact {
+        color: black;
+        border: 2px solid rgba(27, 27, 27, 0.2);
+    }
+
+    textarea#message {
+        color: black;
+        border: 2px solid rgba(27, 27, 27, 0.2);
+
+    }
+    .mail{
+        color: #000000;
+    }
+  
+   
+}
+
+.App.theme-blue {
+
+    background-color: #00203fff;
+
+    .home__text {
+        color: #54E6DC;
+    }
+
+    li.nav__items::before {
+        border-top: 2px solid #54E6DC;
+        border-left: 2px solid #54E6DC;
+    }
+
+    li.nav__items::after {
+        border-bottom: 2px solid #54E6DC;
+        border-right: 2px solid #54E6DC;
+
+    }
+
+    .header.active {
+        background-color: rgb(2, 25, 51);
+    }
+
+    .neon {
+        color: #54E6DC;
+        border: 2px solid #54E6DC;
+        background-color: #00203fff;
+    }
+
+    .neon:hover {
+        color: #fff;
+        box-shadow:
+            0 0 10px #54E6DC,
+            0 0 20px #54E6DC,
+            0 0 40px #54E6DC,
+            0 0 80px #54E6DC,
+            0 0 160px #54E6DC;
+    }
+
+    .neon::before {
+        background: #54E6DC;
+    }
+
+    .service__boxx:hover {
+        background-image: linear-gradient(90deg, #1e9189, #9AEAE3);
+    }
+
+    .icon {
+        color: #54E6DC;
+    }
+
+    .service__box:hover .icon {
+        color: #00203fff;
+    }
+
+    .service__box {
+        background-color: rgb(5, 20, 39);
+    }
+
+    .service__box:hover {
+        background-image: linear-gradient(90deg, #1e9189, #9AEAE3);
+    }
+
+    .service__box:hover .service__text {
+        color: #00203fff;
+    }
+    .service__box:hover p.service__text.p__color{
+        color: #00203fff;
+    }
+
+    .mask__effect{
+        background-color: #54E6DC;
+    }
+    a.project__btn:hover{
+        background-color: #1e9189;
+        border: 2px solid #1e9189;
+    }
+    p.hire__textt{
+        color: #54E6DC;
+    }
+    button.setting {
+        background-color: rgb(2, 25, 51);
+    }
+    .theme-options{
+        background-color: rgb(2, 25, 51);
+    }
+    .bottom__to__top{
+        color: #1e9189;
+    }
+}
+
+
+
+.App.theme-orange {
+
+    background-color:#606060ff;
+
+    .home__text {
+        color: #d6ed17ff;
+    }
+
+    li.nav__items::before {
+        border-top: 2px solid #d6ed17ff;
+        border-left: 2px solid #d6ed17ff;
+    }
+
+    li.nav__items::after {
+        border-bottom: 2px solid #d6ed17ff;
+        border-right: 2px solid #d6ed17ff;
+
+    }
+
+    .header.active {
+        background-color: rgb(51, 48, 48);
+    }
+
+    .neon {
+        color: #d6ed17ff;
+        border: 2px solid #d6ed17ff;
+        background-color:#606060ff;
+    }
+
+    .neon:hover {
+        color: #fff;
+        box-shadow:
+            0 0 10px #d6ed17ff,
+            0 0 20px #d6ed17ff,
+            0 0 40px #d6ed17ff,
+            0 0 80px #d6ed17ff,
+            0 0 160px #d6ed17ff;
+    }
+
+    .neon::before {
+        background: #d6ed17ff;
+    }
+
+    .service__boxx:hover {
+        background-image: linear-gradient(90deg, #d6ed17ff, rgb(211, 223, 105));
+    }
+
+    .icon {
+        color: #d6ed17ff;
+    }
+
+    .service__box:hover .icon {
+        color:#606060ff;
+    }
+
+    .service__box {
+        background-color:  rgb(51, 48, 48);
+    }
+
+    .service__box:hover {
+        background-image: linear-gradient(90deg, #d6ed17ff, rgb(211, 223, 105));
+    }
+
+    .service__box:hover .service__text {
+        color:#606060ff;
+    }
+    .service__box:hover p.service__text.p__color{
+        color:#606060ff;
+    }
+
+    .mask__effect{
+        background-color: #d6ed17ff;
+    }
+    a.project__btn:hover{
+        background-color: #d6ed17ff;
+        border: 2px solid #d6ed17ff;
+    }
+    p.hire__textt{
+        color: #d6ed17ff;
+    }
+    button.setting {
+        background-color:  rgb(51, 48, 48);
+    }
+    .theme-options{
+        background-color:  rgb(51, 48, 48);
+    }
+
+    .bottom__to__top{
+        color: #1e9189;
+    }
+   
+}
+
+.App.theme-purple {
+    background-color: #000000;
+
+    .home__text {
+        color:#39FF14;
+    }
+
+    li.nav__items::before {
+        border-top: 2px solid#39FF14;
+        border-left: 2px solid#39FF14;
+    }
+
+    li.nav__items::after {
+        border-bottom: 2px solid#39FF14;
+        border-right: 2px solid#39FF14;
+
+    }
+
+    .header.active {
+        background-color: #191919;
+    }
+
+    .neon {
+        color:#39FF14;
+        border: 2px solid#39FF14;
+        background-color: #000000;
+    }
+
+    .neon:hover {
+        color: #fff;
+        box-shadow:
+            0 0 10px#39FF14,
+            0 0 20px#39FF14,
+            0 0 40px#39FF14,
+            0 0 80px#39FF14,
+            0 0 160px#39FF14;
+    }
+
+    .neon::before {
+        background:#39FF14;
+    }
+
+    .service__boxx:hover {
+        background-image: linear-gradient(90deg,#39FF14, rgb(211, 223, 105));
+    }
+
+    .icon {
+        color:#39FF14;
+    }
+
+    .service__box:hover .icon {
+        color: #000000;
+    }
+
+    .service__box {
+        background-color:  #191919;
+    }
+
+    .service__box:hover {
+        background-image: linear-gradient(90deg,#39FF14, rgb(211, 223, 105));
+    }
+
+    .service__box:hover .service__text {
+        color: #000000;
+    }
+    .service__box:hover p.service__text.p__color{
+        color: #000000;
+    }
+
+    .mask__effect{
+        background-color:#39FF14;
+    }
+    a.project__btn:hover{
+        background-color:#39FF14;
+        border: 2px solid#39FF14;
+    }
+    p.hire__textt{
+        color:#39FF14;
+    }
+    button.setting {
+        background-color:  #191919;
+    }
+    .theme-options{
+        background-color:  #191919;
+    }
+}
+
+
+
+
+
+
+
+button.setting {
+    width: 3rem;
+    height: 3rem;
+    background-color: #F9004D;
+    border: none;
+    border-radius: 50%;
+    position: absolute;
+    color: #fff;
+    font-size: 1.2rem;
+    left: -100%;
+    top: 45%;
+    display: grid;
+    place-items: center;
+    cursor: pointer;
+    animation: theme 3s cubic-bezier(0.55, 0.085, 0.68, 0.53) 2s infinite alternate-reverse;
+
+}
+
+@keyframes theme {
+    0% {
+        transform: rotate(0deg) scale(0.7);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+.theme-options--open {
+    transform: translate(0, -50%);
+
+}
